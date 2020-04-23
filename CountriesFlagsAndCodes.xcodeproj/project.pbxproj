@@ -13,6 +13,10 @@
 		BB20C07D2451F8EC00E68154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB20C07C2451F8EC00E68154 /* Assets.xcassets */; };
 		BB20C0802451F8EC00E68154 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB20C07F2451F8EC00E68154 /* Preview Assets.xcassets */; };
 		BB20C0832451F8EC00E68154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB20C0812451F8EC00E68154 /* LaunchScreen.storyboard */; };
+		BB20C08D2451F91D00E68154 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20C08C2451F91D00E68154 /* Country.swift */; };
+		BB20C08F2451FA9600E68154 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20C08E2451FA9600E68154 /* Store.swift */; };
+		BB20C0932451FDC700E68154 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20C0922451FDC700E68154 /* CountryViewModel.swift */; };
+		BB74BEF524520B3A00F7567C /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = BB20C0912451FDA900E68154 /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BB20C07F2451F8EC00E68154 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB20C0822451F8EC00E68154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB20C0842451F8EC00E68154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB20C08C2451F91D00E68154 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BB20C08E2451FA9600E68154 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BB20C0912451FDA900E68154 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		BB20C0922451FDC700E68154 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,12 @@
 		BB20C0752451F8E800E68154 /* CountriesFlagsAndCodes */ = {
 			isa = PBXGroup;
 			children = (
+				BB20C07A2451F8E900E68154 /* ContentView.swift */,
+				BB20C08E2451FA9600E68154 /* Store.swift */,
+				BB20C08C2451F91D00E68154 /* Country.swift */,
+				BB20C0902451FDA900E68154 /* DataSource */,
 				BB20C0762451F8E800E68154 /* AppDelegate.swift */,
 				BB20C0782451F8E800E68154 /* SceneDelegate.swift */,
-				BB20C07A2451F8E900E68154 /* ContentView.swift */,
 				BB20C07C2451F8EC00E68154 /* Assets.xcassets */,
 				BB20C0812451F8EC00E68154 /* LaunchScreen.storyboard */,
 				BB20C0842451F8EC00E68154 /* Info.plist */,
@@ -73,6 +84,15 @@
 				BB20C07F2451F8EC00E68154 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB20C0902451FDA900E68154 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BB20C0912451FDA900E68154 /* countries.json */,
+				BB20C0922451FDC700E68154 /* CountryViewModel.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +155,7 @@
 			files = (
 				BB20C0832451F8EC00E68154 /* LaunchScreen.storyboard in Resources */,
 				BB20C0802451F8EC00E68154 /* Preview Assets.xcassets in Resources */,
+				BB74BEF524520B3A00F7567C /* countries.json in Resources */,
 				BB20C07D2451F8EC00E68154 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB20C08F2451FA9600E68154 /* Store.swift in Sources */,
+				BB20C08D2451F91D00E68154 /* Country.swift in Sources */,
 				BB20C0772451F8E800E68154 /* AppDelegate.swift in Sources */,
 				BB20C0792451F8E800E68154 /* SceneDelegate.swift in Sources */,
 				BB20C07B2451F8E900E68154 /* ContentView.swift in Sources */,
+				BB20C0932451FDC700E68154 /* CountryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
