@@ -9,7 +9,9 @@
 import Foundation
 
     struct Country: Identifiable,Codable {
-        var id:UUID? = UUID()
+        var id: UUID {
+            UUID()
+        }
         let name: String
         let code: String
         let flag: String

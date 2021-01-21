@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var countryVM:CountryViewModel = CountryViewModel()
+    @StateObject var countryVM:CountryViewModel = CountryViewModel()
     @State private var appStoreOnly = 0
     var body: some View {
     let filteredCountries = appStoreOnly == 1 ? countryVM.countries.filter {$0.appStore} : countryVM.countries
