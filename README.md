@@ -1,5 +1,5 @@
 # Countries Flags And Codes
-Countries, flags and country code with boolean indicating if country is in App Store
+Countries, flags and country code with boolean indicating if country is in App Store.
 
 A Simple SwiftUI project that reads a JSON file in the bundle to display all countries including the country flag (emoji),  and 2 letter country code.
 
